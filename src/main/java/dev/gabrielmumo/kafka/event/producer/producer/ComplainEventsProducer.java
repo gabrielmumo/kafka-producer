@@ -15,7 +15,7 @@ import java.util.concurrent.CompletableFuture;
 @Component
 public class ComplainEventsProducer {
 
-    Logger log = LoggerFactory.getLogger(ComplainEventsProducer.class);
+    private static final Logger log = LoggerFactory.getLogger(ComplainEventsProducer.class);
 
     @Value("${spring.kafka.topic}")
     public String topic;
